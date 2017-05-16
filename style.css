@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+/*css logo*/
+.logo{
+    text-align: center;
+}
+.logo > img{
+    border-radius: 50%;
+    margin-top: 61px;
+    vertical-align: middle;
+}
+.logo >ul{
+    margin-top: 34px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo >ul>li{
+    min-width: 128px;
+    background: #d8d8d8;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 24px;
+}
+
+
+/*css summary*/
+.two{
+    padding-top: 37px;
+    background: #efefef;
+}
+.summary{
+    text-align: center;
+}
+.summary > h2{
+    background: #d8d8d8;
+    width: 200px;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+    border-radius: 14px;
+}
+.summary > .content{
+    margin-top: 27px;
+    padding-bottom: 35px;
+    text-align: left;
+}
+.summary >.content > p{
+    background: #e8e8e8;
+    max-width: 250px;
+    border-radius: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    margin-top: 19px;
+}
+
+
+/*css introduce*/
+.introduce{}
+.introduce >ol{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.introduce li{
+    min-width: 288px;
+    margin: 0 auto;
+}
+.introduce li > img{
+    width: 288px;
+    height: 181px;
+    border-radius:4px;
+    margin-top: 32px;
+    border: 1px solid;
+    vertical-align: top;
+    background:#d8d8d8;
+}
+.introduce li >h3{
+    background:#bcbcbc;
+    border-radius:4px;
+    max-width:204px;
+    line-height:24px;
+    margin-top: 20px;
+}
+.introduce li >p{
+    background:#ececec;
+    border-radius:4px;
+    margin-top: 14px;
+}
+
+@media (min-width: 960px){
+    .introduce >ol{
+        justify-content: center;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    .one >.logo >ul{
+        margin-top: 41px;
+        padding-bottom: 11px;
+    }
+    .two .hidden{
+        display: none;
+    }
+    .two .content{
+        margin-top: 35px;
+        padding-bottom: 102px;
+    }
+    .two .content >p{
+        min-width: 536px;
+    }
+    .two .content >.first::after{
+        content: '继承艾斯的意志。';
+    }
+    .two .content >.second::after{
+        content: '成为海上最自由的人。';
+    }
+    .two .show{
+        min-width: 376px;
+    }
+    .two .show::after{
+        content: '蒙奇·D·路飞';
+    }
+}
+@media (min-width: 320px) and (max-width: 639px){
+    body{
+        min-width: 320px;
+    }
+}
