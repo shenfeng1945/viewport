@@ -55,19 +55,19 @@ ul,ol{
     padding-top:61.8%;
 }
 .two .banner .window .slides li:first-child{
-    background: transparent url("https://i.loli.net/2017/08/07/598822343d46a.jpg") no-repeat center;
+    background: transparent url("//i.loli.net/2017/08/07/598822343d46a.jpg") no-repeat center;
     background-size:cover;
 }
 .two .banner .window .slides li:nth-child(2){
-    background: transparent url("https://i.loli.net/2017/08/07/59882246aed47.jpg") no-repeat center;
+    background: transparent url("//i.loli.net/2017/08/07/59882246aed47.jpg") no-repeat center;
     background-size:cover;
 }
 .two .banner .window .slides li:nth-child(3){
-    background: transparent url("https://i.loli.net/2017/08/07/5988225494cd8.jpg") no-repeat center;
+    background: transparent url("//i.loli.net/2017/08/07/5988225494cd8.jpg") no-repeat center;
     background-size:cover;
 }
 .two .banner .window .slides li:last-child{
-    background: transparent url("https://i.loli.net/2017/08/07/5988226124bc7.jpg") no-repeat center;
+    background: transparent url("//i.loli.net/2017/08/07/5988226124bc7.jpg") no-repeat center;
     background-size:cover;
 }
 .banner .controls{
@@ -136,28 +136,7 @@ ul,ol{
         margin-top: 41px;
         padding-bottom: 11px;
     }
-    .two .hidden{
-        display: none;
-    }
-    .two .content{
-        margin-top: 35px;
-        padding-bottom: 102px;
-    }
-    .two .content >p{
-        min-width: 536px;
-    }
-    .two .content >.first::after{
-        content: '继承艾斯的意志。';
-    }
-    .two .content >.second::after{
-        content: '成为海上最自由的人。';
-    }
-    .two .show{
-        min-width: 376px;
-    }
-    .two .show::after{
-        content: '蒙奇·D·路飞';
-    }
+   
 }
 @media (min-width: 320px) and (max-width: 639px){
     body{
