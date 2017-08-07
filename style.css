@@ -29,42 +29,66 @@ ul,ol{
     margin-left: 16px;
     margin-right: 16px;
     line-height: 24px;
+    border-radius:10px;
 }
 
 
 /*css summary*/
 .two{
-    padding-top: 37px;
-    background: #efefef;
+   
 }
-.summary{
-    text-align: center;
+.two .banner{
+    max-width:800px;
+    margin:0 auto;
+    position:relative;
 }
-.summary > h2{
-    background: #d8d8d8;
-    width: 200px;
-    margin-top: 19px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 40px;
-    border-radius: 14px;
+.two .banner .window{
+    overflow:hidden;
 }
-.summary > .content{
-    margin-top: 27px;
-    padding-bottom: 35px;
-    text-align: left;
+.two .banner .window .slides{
+    display: flex;
+    transition: transform linear .8s;
 }
-.summary >.content > p{
-    background: #e8e8e8;
-    max-width: 250px;
-    border-radius: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 24px;
-    margin-top: 19px;
+.two .banner .window .slides li{
+    width:100%;
+    flex-shrink:0;
+    padding-top:61.8%;
 }
-
-
+.two .banner .window .slides li:first-child{
+    background: transparent url("https://i.loli.net/2017/08/07/598822343d46a.jpg") no-repeat center;
+    background-size:cover;
+}
+.two .banner .window .slides li:nth-child(2){
+    background: transparent url("https://i.loli.net/2017/08/07/59882246aed47.jpg") no-repeat center;
+    background-size:cover;
+}
+.two .banner .window .slides li:nth-child(3){
+    background: transparent url("https://i.loli.net/2017/08/07/5988225494cd8.jpg") no-repeat center;
+    background-size:cover;
+}
+.two .banner .window .slides li:last-child{
+    background: transparent url("https://i.loli.net/2017/08/07/5988226124bc7.jpg") no-repeat center;
+    background-size:cover;
+}
+.banner .controls{
+    display: flex;
+    position:absolute;
+    bottom:2%;
+    left:50%;
+    transform:translateX(-50%);
+    width:20%;
+    justify-content:space-between;
+}
+.banner .controls li{
+    min-width:23px;
+    text-align:center;
+    border-radius:50%;
+    background:black;
+    color:white;
+}
+.banner .controls li.active{
+    background:red;
+}
 /*css introduce*/
 .introduce{}
 .introduce >ol{
@@ -139,4 +163,25 @@ ul,ol{
     body{
         min-width: 320px;
     }
+}
+/*button*/
+.button-wrapper{
+    text-align:center;
+    margin:20px auto;
+}
+.button {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border:none;
+}
+.button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
