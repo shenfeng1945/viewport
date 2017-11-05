@@ -9,9 +9,6 @@ $('.banner .controls').on('click','li',function (e) {
 let current = 0
 setInterval(function () {
    let nextcurrent = current + 1
-    if(nextcurrent === 4){
-       nextcurrent = 0
-    }
    if(array.index !== undefined){nextcurrent = array.index + 1} 
    if(nextcurrent === 4){nextcurrent = 0}
     go(nextcurrent)
