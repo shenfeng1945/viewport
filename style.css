@@ -80,11 +80,12 @@ ul,ol{
     justify-content:space-between;
 }
 .banner .controls li{
-    min-width:23px;
+    min-width:18px;
     text-align:center;
     border-radius:50%;
     background:black;
     color:white;
+    cursor:pointer;
 }
 .banner .controls li.active{
     background:red;
